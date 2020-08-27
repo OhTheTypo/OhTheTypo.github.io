@@ -1,141 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-            integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-            crossorigin="anonymous"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Sarpanch&display=swap"
-            rel="stylesheet"
-        />
-        <title>My Portfolio</title>
-    </head>
-    <body>
-        <main>
-            <div class="intro">
-                <h1>Hello</h1>
-                <p>I am Monika</p>
-                <br />
-                <p>a front-end developer</p>
-                <br />
-                <h2>My Skills</h2>
-                <br />
-                <ul class="skills">
-                    <div class="skill">
-                        <i id="html" class="fab fa-html5"></i>
-                        <p>html</p>
-                    </div>
-                    <div class="skill">
-                        <i id="css" class="fab fa-css3-alt"></i>
-                        <p>css</p>
-                    </div>
-                    <div class="skill">
-                        <i id="sass" class="fab fa-sass"></i>
-                        <p>sass</p>
-                    </div>
-                    <div class="skill">
-                        <i id="bootstrap" class="fab fa-bootstrap"></i>
-                        <p>bootstrap</p>
-                    </div>
-                    <div class="skill">
-                        <i id="javascript" class="fab fa-js"></i>
-                        <p>javascript</p>
-                    </div>
-                    <div class="skill">
-                        <i id="react" class="fab fa-react"></i>
-                        <p>react</p>
-                    </div>
-                    <div class="skill">
-                        <i id="node" class="fab fa-node-js"></i>
-                        <p>node</p>
-                    </div>
-                    <div class="skill">
-                        <i id="git" class="fab fa-git-alt"></i>
-                        <p>git</p>
-                    </div>
-                </ul>
-            </div>
-            <div class="projects">
-                <h1>Some of my Projects</h1>
-                <div class="projects-container">
-                    <div class="project">
-                        <a href="https://codepen.io/mm001/full/vYGXoEj"
-                            ><h2>Simple Hotel Reservation Site</h2></a
-                        >
-                        <a href="https://codepen.io/mm001/full/vYGXoEj">
-                            <img
-                                src="assets/hotel_preview.png"
-                                width="400"
-                                height="250"
-                                alt="hotel site preview"
-                            />
-                        </a>
-                        <a
-                            href="https://github.com/OhTheTypo/hotel-reservation-site"
-                        >
-                            <button>
-                                <i class="fab fa-github"></i> Github
-                            </button>
-                        </a>
-                    </div>
-                    <div class="project">
-                        <a href="https://stackblitz.com/edit/react-jdbiwd"
-                            ><h2>Weather App in React</h2></a
-                        >
-                        <a href="https://stackblitz.com/edit/react-jdbiwd">
-                            <img
-                                src="assets/weather_app_preview.png"
-                                width="400"
-                                height="250"
-                                alt="weather app preview"
-                            />
-                        </a>
-                        <a href="https://github.com/OhTheTypo/weather-app">
-                            <button>
-                                <i class="fab fa-github"></i> Github
-                            </button>
-                        </a>
-                    </div>
-                    <div class="project">
-                        <a href="https://codepen.io/mm001/project/full/ZwqegW"
-                            ><h2>Javascript Memory Game</h2></a
-                        >
-                        <a href="https://codepen.io/mm001/project/full/ZwqegW">
-                            <img
-                                src="assets/memory_game_preview.png"
-                                width="400"
-                                height="250"
-                                alt="memory game preview"
-                            />
-                        </a>
-                        <br />
-                        <a href="https://github.com/OhTheTypo/memory_game">
-                            <button>
-                                <i class="fab fa-github"></i> Github
-                            </button>
-                        </a>
-                    </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Sarpanch&display=swap" rel="stylesheet" />
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <main>
+        <div class="intro">
+            <h1>Hello</h1>
+            <p>I am Monika</p>
+            <br />
+            <p>a front-end developer</p>
+            <br />
+            <h2>My Skills</h2>
+            <br />
+            <ul class="skills">
+                <div class="skill">
+                    <i id="html" class="fab fa-html5"></i>
+                    <p>html</p>
+                </div>
+                <div class="skill">
+                    <i id="css" class="fab fa-css3-alt"></i>
+                    <p>css</p>
+                </div>
+                <div class="skill">
+                    <i id="sass" class="fab fa-sass"></i>
+                    <p>sass</p>
+                </div>
+                <div class="skill">
+                    <i id="bootstrap" class="fab fa-bootstrap"></i>
+                    <p>bootstrap</p>
+                </div>
+                <div class="skill">
+                    <i id="javascript" class="fab fa-js"></i>
+                    <p>javascript</p>
+                </div>
+                <div class="skill">
+                    <i id="react" class="fab fa-react"></i>
+                    <p>react</p>
+                </div>
+                <div class="skill">
+                    <i id="node" class="fab fa-node-js"></i>
+                    <p>node</p>
+                </div>
+                <div class="skill">
+                    <i id="git" class="fab fa-git-alt"></i>
+                    <p>git</p>
+                </div>
+            </ul>
+        </div>
+        <div class="projects">
+            <h1>Some of my Projects</h1>
+            <div class="projects-container">
+                <div class="project">
+                    <a href="https://codepen.io/mm001/full/vYGXoEj">
+                        <h2>Hotel Reservation Site</h2>
+                    </a>
+                    <a href="https://codepen.io/mm001/full/vYGXoEj">
+                        <img src="assets/hotel_preview.png" alt="hotel site preview" />
+                    </a>
+                    <a href="https://github.com/OhTheTypo/hotel-reservation-site">
+                        <button><i class="fab fa-github"></i> Github</button>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://stackblitz.com/edit/react-jdbiwd">
+                        <h2>Weather App in React</h2>
+                    </a>
+                    <a href="https://stackblitz.com/edit/react-jdbiwd">
+                        <img src="assets/weather_app_preview.png" alt="weather app preview" />
+                    </a>
+                    <a href="https://github.com/OhTheTypo/weather_app">
+                        <button><i class="fab fa-github"></i> Github</button>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://codepen.io/mm001/project/full/ZwqegW">
+                        <h2>Javascript Memory Game</h2>
+                    </a>
+                    <a href="https://codepen.io/mm001/project/full/ZwqegW">
+                        <img src="assets/memory_game_preview.png" alt="memory game preview" />
+                    </a>
+                    <a href="https://github.com/OhTheTypo/memory_game">
+                        <button><i class="fab fa-github"></i> Github</button>
+                    </a>
                 </div>
             </div>
-            <div class="contact">
-                <h1>Contact</h1>
-                <ul>
-                    <li>
-                        <i class="fas fa-envelope"></i> vmonika028@gmail.com
-                    </li>
-                    <li><i class="fab fa-skype"></i> monik.023</li>
-                </ul>
-            </div>
-        </main>
-    </body>
+        </div>
+        <div class="contact">
+            <h1>Contact</h1>
+            <ul>
+                <li><i class="fas fa-envelope"></i> vmonika028@gmail.com</li>
+                <li><i class="fab fa-skype"></i> monik.023</li>
+            </ul>
+        </div>
+    </main>
+</body>
+
 </html>

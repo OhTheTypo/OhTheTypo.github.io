@@ -18,7 +18,7 @@ body {
 }
 
 .intro h1 {
-  padding-top: 200px;
+  padding-top: 180px;
   font-size: 80px;
   color: #ff29ff;
 }
@@ -38,9 +38,11 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 50%;
-  margin: auto;
-  padding-bottom: 200px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 70%;
+  margin: 20px auto 0;
+  padding-bottom: 180px;
 }
 
 .skills i {
@@ -57,6 +59,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100px;
+  margin: 10px;
 }
 
 .skill p {
@@ -114,7 +117,7 @@ body {
 }
 
 .projects-container {
-  padding: 0 30px 80px;
+  padding: 0 0 80px;
   margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,6 +131,11 @@ body {
           justify-content: space-between;
 }
 
+.project {
+  width: 30%;
+  margin: 0 20px;
+}
+
 .project h2 {
   font-family: "Questrial", sans-serif;
 }
@@ -135,6 +143,7 @@ body {
 img {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  width: 100%;
 }
 
 img:hover {
@@ -200,5 +209,34 @@ a:visited {
 .contact i {
   margin-right: 5px;
   color: #ff29ff;
+}
+
+@media only screen and (max-width: 976px) {
+  .projects-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .project {
+    width: 45%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .projects-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 234px) {
+  .intro h1 {
+    font-size: 33vw;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

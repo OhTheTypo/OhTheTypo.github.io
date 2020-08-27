@@ -16,7 +16,7 @@ body {
     text-align: center;
     box-shadow: 0 0 6px $pink;
     h1 {
-        padding-top: 200px;
+        padding-top: 180px;
         font-size: 80px;
         color: $pink;
     }
@@ -29,9 +29,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 50%;
-    margin: auto;
-    padding-bottom: 200px;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 20px auto 0;
+    padding-bottom: 180px;
     i {
         list-style-type: none;
         font-size: 30px;
@@ -42,6 +43,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100px;
+    margin: 10px;
     p {
         margin-top: 5px;
     }
@@ -87,19 +89,24 @@ body {
 }
 
 .projects-container {
-    padding: 0 30px 80px;
+    padding: 0 0 80px;
     margin-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.project h2 {
-    font-family: "Questrial", sans-serif;
+.project {
+    width: 30%;
+    margin: 0 20px;
+    h2 {
+        font-family: "Questrial", sans-serif;
+    }
 }
 
 img {
     filter: grayscale(100%);
+    width: 100%;
     &:hover {
         filter: initial;
     }
@@ -154,5 +161,30 @@ a:visited {
     i {
         margin-right: 5px;
         color: $pink;
+    }
+}
+
+@media only screen and (max-width: 976px) {
+    .projects-container {
+        flex-wrap: wrap;
+    }
+    .project {
+        width: 45%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .projects-container {
+        flex-direction: column;
+    }
+    .project {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 234px) {
+    .intro h1 {
+        font-size: 33vw;
     }
 }
