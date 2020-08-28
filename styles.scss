@@ -89,7 +89,7 @@ body {
 }
 
 .projects-container {
-    padding: 0 0 80px;
+    padding: 0 5px 80px;
     margin-top: 100px;
     display: flex;
     flex-direction: row;
@@ -101,6 +101,9 @@ body {
     margin: 0 20px;
     h2 {
         font-family: "Questrial", sans-serif;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -109,6 +112,7 @@ img {
     width: 100%;
     &:hover {
         filter: initial;
+        transform: scale(1.1)
     }
 }
 
