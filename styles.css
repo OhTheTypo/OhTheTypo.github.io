@@ -9,6 +9,7 @@ body {
   background: #000;
   color: #fff;
   font-family: "Sarpanch", sans-serif;
+  word-wrap: break-word;
 }
 
 .intro {
@@ -241,8 +242,12 @@ a:visited {
 }
 
 @media only screen and (max-width: 234px) {
-  .intro h1 {
-    font-size: 33vw;
+  .project button {
+    font-size: 6vw;
+    width: 52vw;
+  }
+  .project button i {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
