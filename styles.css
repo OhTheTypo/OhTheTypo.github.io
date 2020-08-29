@@ -41,7 +41,7 @@ body {
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 70%;
+  width: 40%;
   margin: 20px auto 0;
   padding-bottom: 180px;
 }
