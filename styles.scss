@@ -4,7 +4,10 @@ $pink: rgb(255, 41, 255);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 18px;
+}
+
+html {
+    font-size: 16px;
 }
 
 body {
@@ -12,6 +15,7 @@ body {
     background-attachment: fixed;
     font-family: "Sarpanch", sans-serif;
     word-wrap: break-word;
+    max-width: 1440px;
 }
 
 main {
@@ -39,12 +43,12 @@ main {
     text-align: center;
     min-height: 100vh;
     h1 {
-        padding-top: 180px;
+        margin-top: 1.5em;
         font-size: 8rem;
         color: $pink;
     }
     h2 {
-        margin-top: 30px;
+        margin-top: 3em;
     }
 }
 
@@ -53,22 +57,21 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 30%;
-    margin: 20px auto 0;
-    padding-bottom: 180px;
+    max-width: 39em;
+    margin: 1em auto 0;
     i {
         list-style-type: none;
-        font-size: 30px;
+        font-size: 2rem;
     }
 }
 
 .skill {
     display: flex;
     flex-direction: column;
-    width: 100px;
-    margin: 10px;
+    width: 6em;
+    margin: 1em;
     p {
-        margin-top: 5px;
+        margin-top: 0.5em;
     }
 }
 
@@ -98,8 +101,8 @@ main {
 }
 
 .projects {
+    margin-top: 5em;
     h1 {
-        padding-top: 80px;
         font-size: 2rem;
     }
     h1, h2 {
@@ -107,20 +110,22 @@ main {
     }
     img {
         margin-top: 1.5em;
+        height: auto;
+        object-fit: contain;
     }
 }
 
 .projects-container {
-    padding: 0 5px 80px;
-    margin-top: 100px;
+    margin-top: 6.25em;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .project {
-    width: 30%;
-    margin: 0 20px;
+    min-width: 30%;
+    margin: 0 1.25em;
     h2 {
         font-family: "Questrial", sans-serif;
         font-size: 1.2rem;
@@ -132,8 +137,9 @@ main {
 
 img {
     width: 100%;
+    height: 19em;
     &:hover {
-        transform: scale(1.1)
+        transform: scale(1.05);
     }
 }
 
@@ -146,15 +152,15 @@ a:visited {
 
 .project button {
     display: block;
-    margin: 30px auto;
-    padding: 5px;
-    width: 120px;
+    margin: 1.8em auto;
+    padding: 0.6em;
+    width: 10em;
     font-size: 0.8rem;
-    border-radius: 5px;
+    border-radius: 0.4em;
     background: black;
     color: white;
     border: none;
-    box-shadow: 0px 0px 26px $pink;
+    box-shadow: 0 0 2em $pink;
     font-family: "Sarpanch", sans-serif;
     cursor: pointer;
     &:hover {
@@ -163,16 +169,16 @@ a:visited {
     }
     i {
         position: relative;
-        left: -20px;
+        left: -1.4em;
         font-size: 0.8rem;
     }
 }
 
 .contact {
-    height: 500px;
+    height: 31em;
     h1 {
         text-align: center;
-        padding-top: 80px;
+        margin-top: 6em;
         font-size: 2rem;
     }
 }
@@ -182,39 +188,22 @@ a:visited {
     grid-template-columns: auto auto;
     grid-auto-columns: auto auto;
     width: max-content;
-    margin: 100px auto;
-    column-gap: 20px;
+    margin: 6.25em auto;
+    column-gap: 1.25em;
     i {
         color: $pink;
-        margin: auto 10px;
+        margin: auto 1em;
     }
 }
 
-@media only screen and (max-width: 976px) {
-    .projects-container {
-        flex-wrap: wrap;
-    }
+@media screen and (max-width: 1440px) {
     .project {
-        width: 45%;
-        margin: auto;
+        margin: 1em 1.25em;
     }
 }
 
-@media only screen and (max-width: 700px) {
-    .projects-container {
-        flex-direction: column;
-    }
-    .project {
-        width: 55%;
-    }
-}
-
-@media only screen and (max-width: 234px) {
-    .project button {
-        font-size: 6vw;
-        width: 52vw;
-        i {
-            display: none;
-        }
+@media screen and (max-width: 768px) {
+    .skills {
+        width: 43%;
     }
 }
